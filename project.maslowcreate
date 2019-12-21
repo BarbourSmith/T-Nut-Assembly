@@ -39,8 +39,8 @@
                 {
                     "atomType": "Translate",
                     "name": "Translate",
-                    "x": 409,
-                    "y": 152,
+                    "x": 385,
+                    "y": 143,
                     "uniqueID": 281587,
                     "ioValues": [
                         {
@@ -53,7 +53,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": -1.5
                         }
                     ]
                 },
@@ -74,9 +74,31 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": -1.8
                         }
                     ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 630,
+                    "y": 118,
+                    "uniqueID": 135632,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 1",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 2",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 3",
+                            "ioValue": 10
+                        }
+                    ],
+                    "removeCutawayGeometry": true
                 },
                 {
                     "atomType": "Output",
@@ -87,6 +109,13 @@
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "3D shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 920282,
+                    "ap2ID": 135632
+                },
                 {
                     "ap1Name": "Geometry",
                     "ap2Name": "geometry",
@@ -100,6 +129,26 @@
                     "ap2Primary": true,
                     "ap1ID": 882649,
                     "ap2ID": 778676
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 281587,
+                    "ap2ID": 135632
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 778676,
+                    "ap2ID": 135632
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 135632
                 }
             ],
             "fileTypeVersion": 1
@@ -150,6 +199,20 @@
                     "ioValues": []
                 },
                 {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 575,
+                    "y": 142,
+                    "uniqueID": 749883,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 1",
+                            "ioValue": 10
+                        }
+                    ],
+                    "removeCutawayGeometry": true
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1316,
@@ -157,7 +220,21 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "3D shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 630941,
+                    "ap2ID": 749883
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 749883
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
