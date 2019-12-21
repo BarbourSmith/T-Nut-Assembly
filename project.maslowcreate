@@ -204,6 +204,20 @@
                     "ioValues": []
                 },
                 {
+                    "atomType": "Equation",
+                    "name": "Equation",
+                    "x": 201,
+                    "y": 107,
+                    "uniqueID": 174031,
+                    "ioValues": [
+                        {
+                            "name": "T",
+                            "ioValue": 0.75
+                        }
+                    ],
+                    "currentEquation": "2-T"
+                },
+                {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
                     "x": 178,
@@ -229,20 +243,20 @@
                     "ioValues": [
                         {
                             "name": "diameter",
-                            "ioValue": 1
+                            "ioValue": 1.25
                         }
                     ]
                 },
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 384,
-                    "y": 144,
+                    "x": 395,
+                    "y": 128,
                     "uniqueID": 217479,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 2
+                            "ioValue": 1.25
                         },
                         {
                             "name": "y length",
@@ -439,6 +453,20 @@
                     "ap2Primary": false,
                     "ap1ID": 348447,
                     "ap2ID": 218817
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "T",
+                    "ap2Primary": false,
+                    "ap1ID": 348447,
+                    "ap2ID": 174031
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 174031,
+                    "ap2ID": 217479
                 },
                 {
                     "ap1Name": "geometry",
